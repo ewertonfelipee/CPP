@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumprod(int a, int b, int *s, int *p){
+void sumprod(int a, int b, int *s, int *p){
 
     *s = a + b;
     *p = a * b;
