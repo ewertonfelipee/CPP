@@ -21,6 +21,10 @@ int main(void)
 
     printf("The element 'c' of 0 is: %d\n", c[0]);
     printf("The element 'c' of 1 is: %d\n", c[1]);
-    printf("The element 'c' of 2 is: %d\n", c[2]);
+    printf("The element 'c' of 2 is: %d\n\n", c[2]);
+
+    printf("The array c memory address: %p\n", &c);
+    printf("The memory address of first element of array c: %p\n", &c[0]);
+    printf("The memory address of second element of array c: %p\n", &c[1]);
     return 0;
 }
