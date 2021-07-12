@@ -7,9 +7,9 @@ int main(void){
 
     double d = 1;
 
-    printf("The f (float) length is: %zu bytes\n", sizeof f);
+    printf("The f (float) size is: %zu bytes\n", sizeof f);
 
-    printf("The d (double) length is: %zu bytes\n", sizeof d);
+    printf("The d (double) size is: %zu bytes\n", sizeof d);
 
     printf("The f value is: %.2f\n", f);
 
