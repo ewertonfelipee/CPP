@@ -27,19 +27,18 @@ int main()
     return 0;
 }
 
-    // |2|8|6|10|12|1|33|17|35|66| array values
-    //  1 2 3  4  5 6  7  8  9 10 array positions
+// |2|8|6|10|12|1|33|17|35|66| array values
+//  1 2 3  4  5 6  7  8  9 10 array positions
 
-    /* In a array v, we have the equivalences follows:
+/* In a array v, we have the equivalences follows:
 
-        v + 0 points to the first element of the array
-        v + 1 points to the second element of the array
-        v + 2 points to the third element of the array
-        .
-        .
-        .
-        .
-        .
-        v + 9 points to the tenth element of the array
-    */
-    
+    v + 0 points to the first element of the array
+    v + 1 points to the second element of the array
+    v + 2 points to the third element of the array
+    .
+    .
+    .
+    .
+    .
+    v + 9 points to the tenth element of the array
+*/
