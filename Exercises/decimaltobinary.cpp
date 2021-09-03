@@ -6,8 +6,8 @@ long long int convert(int n)
     long long bin = 0;
     int rest, i = 1;
     while(n != 0){
-        rest = n % 2;
-        n /= 2;
+        rest = n % 2; // divsion rest
+        n /= 2; // division quocient
         bin = bin + (rest * i);
         i *= 10;
     }
