@@ -4,11 +4,11 @@ using namespace std;
 long long int convert(int n)
 {
     long long bin = 0;
-    int rest, i = 1, step = 1;
+    int rest, i = 1;
     while(n != 0){
         rest = n % 2;
         n /= 2;
-        bin += rest * i;
+        bin = bin + (rest * i);
         i *= 10;
     }
     return bin;
