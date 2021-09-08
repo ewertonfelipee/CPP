@@ -1,2 +1,2 @@
-# CandCPP
-Repository for codes in C and C++
+# CPP
+Repository for codes in C++
