@@ -8,6 +8,7 @@ void swap(int &num1, int &num2)
     temp = num1;
     num1 = num2;
     num2 = temp;
+    cout << "Address num1 and address num2 " << &num1 << " " << &num2 << endl;
 }
 
 int main()
