@@ -17,3 +17,17 @@ int main(void)
     printf("\n");
     return 0;
 }
+
+// using strrev function
+// int main()
+// {
+//     char str[50];
+
+//     scanf("%s", str);
+
+//     printf("The given string is =%s\n",str);
+
+//     printf("After reversing string is =%s",strrev(str));
+
+//     return 0;
+// }
