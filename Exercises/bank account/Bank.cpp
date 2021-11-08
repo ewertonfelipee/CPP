@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    Account AccountClient01;
+    Account AccountClient01; // AccountClient01 is object type of Account Class
     Account AccountClient02;
 
     AccountClient01.SetBank("Bank of Brazil");
