@@ -11,7 +11,7 @@ struct Book{
     string AuthorName;
     string PublisherName;
     
-} Books;
+} Books; // Books is struct variable
 
 int main(void)
 {
