@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void *malloc_s(size_t size){
     void *ptr;
@@ -32,10 +33,12 @@ int main(int argc, char **argv){
     p = realloc(p, sizeof(int) * 5);
     *(p+3) = 40; // p[3]
     *(p+4) = 50;
+    memset(p, 0, sizeof(int) * 5);
     putchar('\n');
     for(int i = 0; i < 5; i++){
         printf("%d\n", *(p + i));
     }
+
     free(p);
 
     return 0;
