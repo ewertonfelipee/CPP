@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// void error(char msg[])
-// {   // *msg == msg[]
-//     fprintf(stderr, "Error: %s\n", msg);
-//     exit(1);
-// }
+#if 0
+void error(char msg[])
+{   // *msg == msg[]
+    fprintf(stderr, "Error: %s\n", msg);
+    exit(1);
+}
+#endif
 
 int soma(int n1, int n2)
 {
