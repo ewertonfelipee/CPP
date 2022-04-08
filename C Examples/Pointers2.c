@@ -1,22 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv, char **envp){
-    // **argv and *argv[] are the same thing
-
-    int i;
-    for(i=0; i<argc; i++){
-        puts(argv[i]);
-        puts(envp[i]);
+void print(char *str){
+    while (*str)
+    {
+        putchar(*str++);
+        // string is a pointer to a char
     }
+    
+}
 
-    int n = 3, *p = NULL;
-    printf("\naddress of n: %p\nsize of n: %zu\n\n", &n, sizeof(n));
-    printf("\naddress of p: %p\nsize of p: %zu\n\n", &p, sizeof(p));
-    printf("value of p: %p\n", p);
-    p = &n;
+int main(void){
+    
+    int a[] = {8, 3, 4};
+    size_t n = sizeof(a) / sizeof(a[0]);
+    for(int i = 0; i < n; i++){
+        printf("%d\n", a[i]);
+        printf("first position plus i whitout syntactic sugar: %d\n", *(a + i));
+    }
+    // printf("address: %p\n", &a);
+    // printf("first position: %d\n", *a);
+    printf("first position: %d\n", a[0]);
+    printf("first position whitout syntactic sugar: %d\n", *a);
+    printf("second position: %d\n", a[1]);
+    printf("second position whitout syntactic sugar: %d\n", *(a + 1));
+    // printf("first position plus i: %d\n", *a + i);
 
-    printf("value of p: %d\n", *p);
-    printf("value of p: %p\n", &p);
+    int *p, i = 2;
+    p = &i;
+    printf("Address: %p\n", p);
+    printf("Value: %d\n", *p);
+    printf("first position plus 1: %p\n", (a + 1));
+
+    //char s[] == char *t these two ways are the same
+    char s[] = "ewerton felipe\n";
+    char *t = "ewerton felipe\n";
+    //char *t = "ewerton";
+
+    print(s);
+    print(t);
+    putchar(*t); // expected print e
+    putchar('\n');
+    t++;
+    putchar(*t); // expected print w
+    putchar('\n');
+    //puts(t);
+
     return 0;
 }
