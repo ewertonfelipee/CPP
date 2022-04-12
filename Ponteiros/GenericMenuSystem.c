@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Pointer to function
 void func1(int a)
 {
     printf("Você digitou %d, de modo que function1 foi chamada\n\n", a);

@@ -49,6 +49,6 @@ void prod_poly(int n, float *a, float *b, float *c)
 void derivative_polynomial(int n, double *a, double *d)
 {
     for(int k = 0; k < n; k++){
-        d[i] = (k + 1)* a[i+1];
+        d[k] = (k + 1)* a[k+1];
     }
 }
