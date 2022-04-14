@@ -10,15 +10,15 @@ void swap(int *elem1ptr, int *elem2ptr)
     *elem2ptr = temp;
 }
 
-void bubble(int *work, const int size, int (*compare)(int a, int b))
+void bubble(int *const work, const int size, int (*compare)(int a, int b))
 {
     int i; // step counter
-    int count;
+    int j;
 
     for(i = 0; i < size; i++)
-        for(count = 0; count < size - 1; count++)
-            if((*compare)(work[count], work[count + 1])){
-                swap(&work[count], &work[count + 1]);
+        for(j = 0; j < size - 1; j++)
+            if((*compare)(work[j], work[j + 1])){
+                swap(&work[j], &work[j + 1]);
             }
 }
 
