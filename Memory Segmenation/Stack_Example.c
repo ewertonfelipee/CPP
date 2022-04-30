@@ -9,4 +9,6 @@ void test_function(int a, int b, int c, int d)
 int main()
 {
     test_function(1,2,3,4);
+
+    return 0;
 }
