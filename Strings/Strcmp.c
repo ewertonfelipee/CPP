@@ -10,10 +10,10 @@ int strcmpp(char *s1, char *s2)
 
 int main(void)
 {
-    char *t = "felipe";
-    char *s = "ewerton";
+    // char *t = "felipe";
+    // char *s = "ewerton";
 
-    int resp = strcmpp(s, t);
+    int resp = strcmpp("ewerton", "felipe");
     printf("%d\n", resp);
 
     return 0;
