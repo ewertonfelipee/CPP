@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int global_var;
 
@@ -35,5 +37,6 @@ int main()
     // this variables are in the stack segment.
     printf("stack_var = 0x%08x\n", &stack_var);
     function();
+    free(heap_var_ptr);
     return 0;
 }
