@@ -1,3 +1,9 @@
+void usage(char *prog_name, char *filename)
+{
+    printf("Usage: %s <data to add to %s>\n", prog_name, filename);
+    exit(0);
+}
+
 // A function to display an error message and then exit
 void fatal(char *message)
 {
