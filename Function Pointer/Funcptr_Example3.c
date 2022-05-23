@@ -25,7 +25,7 @@ void divisor(int a, int b)
 int main()
 {
     // func_ptr_arr is an array of function pointer
-    void (*func_ptr_arr[])(int, int) = {add, sub, multiply};
+    void (*func_ptr_arr[])(int, int) = {add, sub, multiply, divisor};
     unsigned int choice, a, b;
     scanf("%d %d", &a, &b);
 
