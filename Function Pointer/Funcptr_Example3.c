@@ -29,10 +29,11 @@ int main()
     unsigned int choice, a, b;
     scanf("%d %d", &a, &b);
 
-    printf("Enter the number between 0 and 2: \n");
+    printf("Enter the number between 0 and 3: \n");
     scanf("%d", &choice);
 
-    if(choice > 3)
+
+    if(choice > 4) 
         return 0;
     
     (*func_ptr_arr[choice])(a ,b);
