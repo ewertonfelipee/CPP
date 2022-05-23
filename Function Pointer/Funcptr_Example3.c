@@ -32,7 +32,7 @@ int main()
     printf("Enter the number between 0 and 2: \n");
     scanf("%d", &choice);
 
-    if(choice > 2)
+    if(choice > 3)
         return 0;
     
     (*func_ptr_arr[choice])(a ,b);
