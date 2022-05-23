@@ -17,6 +17,11 @@ void multiply(int a, int b)
     printf("Multiplication is %d\n", a * b);
 }
 
+void divisor(int a, int b)
+{
+    printf("Division is %d\n", a / b);
+}
+
 int main()
 {
     // func_ptr_arr is an array of function pointer
