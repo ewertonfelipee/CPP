@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 // s1 is the string to be copied
 // s2 is where the content will be copied
 // Array version
@@ -12,20 +12,22 @@
 // }
 
 // Pointer version
-void strcpyy(char *s1, char *s2)
-{
-    while(*s1++ = *s2++)
-        ;
-}
+// void strcpyy(char *s1, char *s2)
+// {
+//     while(*s1++ = *s2++)
+//         ;
+// }
 
 int main(void)
 {
-    char str1[20];
-    char str2[20];
+    char *str = "Hello, world!";
+    char *str1 = (char*)malloc(50*sizeof(char));
+    char *str2 = (char*)malloc(50*sizeof(char));
     //strcp(str1, " ");
-    strcpyy(str1, "ewerton");
-    strcpyy(str2, str1);
-    printf("%s\n", str2);
-
+    //strcpyy(str1, "ewerton");
+    printf("%s\n", strcpy(str1, str));
+    printf("%s\n", strncpy(str2, str, 10));
+    free(str1);
+    free(str2);
     return 0;
 }
