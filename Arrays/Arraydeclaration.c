@@ -27,6 +27,10 @@ int main()
     return 0;
 }
 
+// int arr[]{2, 3, 4}; C++ Declaration
+// int arr[N]{2, 3, 4}; C++ Declaration
+
+
 // |2|8|6|10|12|1|33|17|35|66| array values
 //  1 2 3  4  5 6  7  8  9 10 array positions
 
